@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="page">
+        <h1>Rock Paper Scissors Game</h1>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 18px; font-weight: bolder;">
+            <span id="yourScore">Your Score: </span> <span id="computersScore">Computers Score: </span>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 5px; font-size: 18px; font-weight: 500;">
+            <span id="yourChoise">Your Choise: </span> <span id="computersChoise">Computers Choise: </span>
+        </div>
+        <div>
+            <img src="rps.jpg" alt="Rock Paper Scissors">
+        </div>
+        <p>Select a choise to play game</p>
+        <div>
+            <img src="choiseRock.jpg" alt="choiseRock" onclick="setRock()">
+            <img src="choisePaper.jpg" alt="choisePaper" onclick="setPaper()">
+            <img src="choiseScissors.jpg" alt="choiseScissors" onclick="setScissors()">
+        </div>
+        <button id="resetScore" onclick="resetScore()">
+            <i class="fas fa-rotate-right"></i>
+        </button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

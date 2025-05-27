@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    width: 400px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    padding: 30px;
+    border-radius: 10px 40px;
+    box-shadow: 5px 5.5px 10px 2px rgba(0, 0, 0, 0.493);
+    gap: 10px;
+}
+
+.page h1 {
+    font-size: 24px;
+}
+
+.page p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+img {
+    width: 10px;
+    cursor: pointer;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 30px;
+    border: 3px solid black;
+    border-radius: 30px 0px;
+    transition: 0.4s all;
+}
+
+button i {
+    font-size: 48px;
+    color: gray;
+    transition: 0.4s all;
+}
+
+button:hover i {
+    color: black;
+}
+
+button:hover {
+    transform: scale(0.93);
+}
+
+.page div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.page div:nth-of-type(3) img {
+    width: 300px;
+    height: 200px;
+    transition: 0.4s all;
+}
+
+.page div:nth-of-type(3) img:hover {
+    filter: brightness(0.7);
+}
+
+.page div:nth-of-type(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.page div:nth-of-type(4) img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 0.2s all ease-in;
+    filter: brightness(0.5);
+}
+
+.page div:nth-of-type(4) img:hover {
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+.disabled {
+    display: none;
+}
